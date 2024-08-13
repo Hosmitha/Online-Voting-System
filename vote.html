@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Voting System</title>
+<link rel="stylesheet" href="vote.css">
+</head>
+<body>
+
+<header>
+    <h1>Online Voting System</h1>
+</header>
+
+<main>
+    <form action="vote.php" method="post">
+        <div class="form-group">
+            <label for="voter_id">Voter ID:</label><br>
+            <input type="text" id="voter_id" name="voter_id" required><br><br>
+        </div>
+        <div class="party">
+            <label>
+                <input type="radio" name="party" value="party1">
+                <img src="images\BRS.jpg" alt="Party 1 Logo">
+            </label>
+        </div>
+        
+        <div class="party">
+            <label>
+                <input type="radio" name="party" value="party2">
+                <img src="images\BJP.jpg" alt="Party 2 Logo">
+            </label>
+        </div>
+        
+        <div class="party">
+            <label>
+                <input type="radio" name="party" value="party3">
+                <img src="images\congress.jpg" alt="Party 3 Logo">
+            </label>
+        </div>
+        
+        <div class="party">
+            <label>
+                <input type="radio" name="party" value="party4">
+                <img src="images\AIMIM.png" alt="Party 4 Logo">
+            </label>
+        </div>
+        
+        <div class="party">
+            <label>
+                <input type="radio" name="party" value="party5">
+                <img src="images\CPI.png" alt="Party 5 Logo">
+            </label>
+        </div>
+
+        <button type="submit">Submit Vote</button>
+    </form>
+</main>
+
+</body>
+</html>

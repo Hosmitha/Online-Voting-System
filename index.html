@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        .simulation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .vote-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Ensure button looks like a link */
+            display: inline-block; /* Ensure button respects its width and height */
+        }
+        .vote-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="voting.html">Vote</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="4448.jpg" style="width:100%">
+                <div class="text">"Democracy is the only system that persists in asking the powers that be whether they are the powers that ought to be."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="image2.jpg" style="width:100%">
+                <div class="text">"Voting is the expression of our commitment to ourselves, one another, this country and this world."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="image3.jpg" style="width:100%">
+                <div class="text">"The ballot is stronger than the bullet."</div>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <h1>Voting is the right of Each and</h1>
+        <p>This is the homepage of our basic website.</p>
+        <p>Please select one of the options from the navigation menu.</p>
+
+        <div class="simulation-container">
+            <a href="voting.html" class="vote-button">Cast Your Vote Now!</a>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
